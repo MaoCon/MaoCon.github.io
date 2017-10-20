@@ -1,4 +1,5 @@
-#####build.gradle，在android/defaultConfig下面添加ndk配置#####
+1. build.gradle，在android/defaultConfig下面添加ndk配置#####
+===========================================================
 
 	defaultConfig {
         applicationId "com.mc.testjni"
