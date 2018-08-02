@@ -40,6 +40,7 @@ moduleName 表示编译出的so文件的名字
 
 		LOCAL_PATH := $(call my-dir)
 		include $(CLEAR_VARS)
+		APP_PLATFORM := android-22
 		LOCAL_MODULE := JNISample
 		LOCAL_SRC_FILES := com_lilei_testjni_JniUtils.cpp
 		include $(BUILD_SHARED_LIBRARY)
@@ -49,8 +50,7 @@ moduleName 表示编译出的so文件的名字
 		APP_STL := gnustl_static
 		APP_CPPFLAGS := -frtti -fexceptions -std=c++0x
 		APP_ABI := armeabi armeabi-v7a arm64-v8a x86
-		APP_PLATFORM := android-22
-
+		
 * 打开终端cd到jni目录下,调用ndk-build开始编译so
 
 		ndk-build -d //打印日志
